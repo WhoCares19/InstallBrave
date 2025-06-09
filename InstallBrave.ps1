@@ -1,4 +1,4 @@
-`$path = "$env:USERPROFILE\Downloads\BraveBrowserSetup.exe"
+$path = "$env:USERPROFILE\Downloads\BraveBrowserSetup.exe"
 
 # Download Brave installer
 Invoke-WebRequest "https://laptop-updates.brave.com/latest/winx64" -OutFile $path -UseBasicParsing
