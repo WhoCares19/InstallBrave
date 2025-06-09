@@ -6,6 +6,7 @@ Even tho everyone is welcome to using it, I want it known that this is for PERSO
 Brave Browser Downloader Power shell Script v0.1, created on 10/06/2025 (day/month/year)
 
 Brave Browser Downloader Power shell Script v0.2 - updated to include:
+
 Automatic naming of the downloaded file, instead of "Hardcoded" name
 show size of the file that is being downloaded
 speed at which the file is being downloaded
