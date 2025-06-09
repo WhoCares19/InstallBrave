@@ -1,0 +1,19 @@
+`$path = "$env:USERPROFILE\Downloads\BraveBrowserSetup.exe"
+
+# Download Brave installer
+Invoke-WebRequest "https://laptop-updates.brave.com/latest/winx64" -OutFile $path -UseBasicParsing
+
+# Start installer and wait for it to finish
+$process = Start-Process -FilePath $path -Verb RunAs -PassThru
+$process.WaitForExit()
+
+# Set extension install policy
+$regPath = "HKLM:\SOFTWARE\Policies\BraveSoftware\Brave\ExtensionInstallForcelist"
+New-Item -Path $regPath -Force | Out-Null
+Set-ItemProperty -Path $regPath -Name "1" -Value "fdpohaocaechififmbbbbbknoalclacl;https://clients2.google.com/service/update2/crx"
+
+Write-Output "Stylus extension installation policy set. Restarting Brave..."
+
+# Restart Brave to apply extension policy
+Get-Process brave -ErrorAction SilentlyContinue | Stop-Process -Force
+Start-Process "brave.exe"
