@@ -1,4 +1,4 @@
-Provided .ps1 file is a download script for Brave Browser. It downloads the browser, installs it and also installs my prefered Extention (Webpage Screenshot maker), then restarts The Browser.
+Provided InstallBrave.ps1 file is a download script for Brave Browser. It downloads the browser, installs it and also installs my prefered Extention (Webpage Screenshot maker), then restarts The Browser.
 It is for MY personal use and ONLY for my Personal use.
 Even tho everyone is welcome to using it, I want it known that this is for PERSONAL USE ONLY.
 
