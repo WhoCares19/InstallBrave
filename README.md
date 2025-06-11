@@ -16,3 +16,7 @@ Brave Browser Downloader Power shell Script v0.2 - updated to include:
 - time it takes to download
 
 Updated on 10/06/2025 (day/month/year)
+
+
+Added Uninstall Brave From Windows.ps1 that automaticaly deletes brave browser with all its settings instead of a user manually deleting brave via add/remove
+Updated on 11/06/2025 (day/month/year)
