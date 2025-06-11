@@ -67,6 +67,9 @@ Write-Host "`nDownload complete: $path"
 $process = Start-Process -FilePath $path -Verb RunAs -PassThru
 $process.WaitForExit()
 
+# Delete the installer file after installation finishes
+Remove-Item $path -Force
+
 # Set extension install policy
 $regPath = "HKLM:\SOFTWARE\Policies\BraveSoftware\Brave\ExtensionInstallForcelist"
 New-Item -Path $regPath -Force | Out-Null
