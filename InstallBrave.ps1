@@ -75,6 +75,9 @@ $regPath = "HKLM:\SOFTWARE\Policies\BraveSoftware\Brave\ExtensionInstallForcelis
 New-Item -Path $regPath -Force | Out-Null
 Set-ItemProperty -Path $regPath -Name "1" -Value "fdpohaocaechififmbbbbbknoalclacl;https://clients2.google.com/service/update2/crx"
 
+# Install Ublock Origins Extention
+Set-ItemProperty -Path $regPath -Name "2" -Value "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx"
+
 Write-Output "Stylus extension installation policy set. Restarting Brave..."
 
 # Restart Brave to apply extension policy
