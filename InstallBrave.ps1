@@ -73,6 +73,8 @@ Remove-Item $path -Force
 # Set extension install policy
 $regPath = "HKLM:\SOFTWARE\Policies\BraveSoftware\Brave\ExtensionInstallForcelist"
 New-Item -Path $regPath -Force | Out-Null
+
+# Install GoFullPage (screenshot) Extention
 Set-ItemProperty -Path $regPath -Name "1" -Value "fdpohaocaechififmbbbbbknoalclacl;https://clients2.google.com/service/update2/crx"
 
 # Install Ublock Origins Extention
